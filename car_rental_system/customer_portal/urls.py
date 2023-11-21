@@ -1,18 +1,18 @@
-from django.urls import path,include
+from django.urls import re_path,include
 from customer_portal.views import *
-from django.conf.urls import url
+
 urlpatterns = [
-    url(r'^index/$',index),
-    url(r'^login/$',login),
-    url(r'^auth/$',auth_view),
-    url(r'^logout/$',logout_view),
-    url(r'^register/$',register),
-    url(r'^registration/$',registration),
-    url(r'^search/$',search),
-    url(r'^search_results/$',search_results),
-    url(r'^rent/$',rent_vehicle),
-    url(r'^confirmed/',confirm),
-    url(r'^manage/',manage),
-    url(r'^update/',update_order),
-    url(r'^delete/',delete_order),
+    re_path(r'^index/$',index),
+    re_path(r'^login/$',login),
+    re_path(r'^auth/$',auth_view),
+    re_path(r'^logout/$',logout_view),
+    re_path(r'^register/$',register),
+    re_path(r'^registration/$',registration),
+    re_path(r'^search/$',search),
+    re_path(r'^search_results/$',search_results),
+    re_path(r'^rent/$',rent_vehicle),
+    re_path(r'^confirmed/',confirm),
+    re_path(r'^manage/',manage),
+    re_path(r'^update/',update_order),
+    re_path(r'^delete/',delete_order),
 ]
