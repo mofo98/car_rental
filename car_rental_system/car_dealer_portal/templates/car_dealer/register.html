@@ -1,24 +1,21 @@
-{% extends 'car_dealer/navbar.html' %}
+{% extends 'car_dealer/base.html' %}
 {% block content %}
-<br>
-<br>
-<br>
 <div class="w3-display-container"  style="height:1000px;">
 <div class="w3-display-middle">
 
   <b> <h2>Registration Form</h2></b>
 
 <form class="w3-container" action="/car_dealer_portal/registration/" method="POST">{% csrf_token %}
-  <lable>First Name</lable> <input class="w3-input" type="text" name="firstname"><br><br>
-  <lable>Last Name</lable> <input class="w3-input" type="text" name="lastname"><br><br>
-  <lable>Username</lable> <input class="w3-input" type="text" name="username"><br><br>
-  <lable>Password</lable> <input class="w3-input" type="password" name="password"><br><br>
-  <lable>Email</lable> <input class="w3-input" type="text" name="email"><br><br>
-  <lable>Contact</lable> <input class="w3-input" type="text" name="mobile"><br><br>
-  <lable>City</lable> <input class="w3-input" type="text" name="city"><br><br>
-  <lable>Pincode</lable> <input class="w3-input" type="text" name="pincode"><br><br>
-  <input class="w3-btn w3-teal" type="submit"><br><br>
-</form>
+  <label>First Name</label> <input class="w3-input" type="text" name="firstname"><br>
+  <label>Last Name</label> <input class="w3-input" type="text" name="lastname"><br>
+  <label>Username</label> <input class="w3-input" type="text" name="username"><br>
+  <label>Password</label> <input class="w3-input" type="password" name="password"><br>
+  <label>Email</label> <input class="w3-input" type="text" name="email"><br>
+  <label>Contact</label> <input class="w3-input" type="text" name="mobile"><br>
+  <label>City</label> <input class="w3-input" type="text" name="city"><br>
+  <label>Pincode</label> <input class="w3-input" type="text" name="pincode"><br>
+  <input class="w3-btn w3-teal" type="submit"><br>
+</form><br>
 </div>
 </div>
 
