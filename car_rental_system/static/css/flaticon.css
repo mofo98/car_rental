@@ -1,7 +1,3 @@
-	/*
-  	Flaticon icon font: Flaticon
-  	Creation date: 04/01/2019 13:45
-  	*/
 
 
 @font-face {
@@ -47,4 +43,4 @@
 .flaticon-pistons:before { content: "\f108"; }
 .flaticon-car-seat:before { content: "\f109"; }
 .flaticon-backpack:before { content: "\f10a"; }
-.flaticon-diesel:before { content: "\f10b"; }s
+.flaticon-diesel:before { content: "\f10b"; }

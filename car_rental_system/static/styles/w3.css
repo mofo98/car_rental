@@ -290,7 +290,7 @@ a {
 .w3-button {
   border: none;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 6px 14px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
@@ -299,6 +299,7 @@ a {
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
+  border-radius: .5rem;
 }
 .w3-btn:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -367,9 +368,10 @@ a {
   transition: opacity 0s;
 }
 .w3-input {
-  padding: 8px;
+  padding: 6px;
   display: block;
   border: none;
+  background-color: none;
   border-bottom: 1px solid #ccc;
   width: 100%;
 }
@@ -870,9 +872,11 @@ a {
 .w3-row-padding > .w3-col {
   padding: 0 8px;
 }
-.w3-container,
 .w3-panel {
   padding: 0.01em 16px;
+}
+.w3-container{
+  padding: 1.5rem;
 }
 .w3-panel {
   margin-top: 16px;
@@ -1582,4 +1586,19 @@ a {
 .w3-border-pale-blue,
 .w3-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
+}
+
+form{
+  margin: auto;
+  min-width: 35vw;
+  background-color: rgb(128, 128, 128,0.3);
+  border-radius: 1.1rem;
+}
+form label{
+  color: #000;
+}
+@media (max-width: 601px) {
+  form{
+    min-width: 85vw;
+  }
 }
