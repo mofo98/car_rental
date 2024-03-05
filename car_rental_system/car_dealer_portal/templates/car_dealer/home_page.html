@@ -1,4 +1,4 @@
-{% extends 'car_dealer/base.html' %}
+<!-- {% extends 'car_dealer/base.html' %} -->
 {% block content %}
 {% load static %}
 
@@ -14,15 +14,16 @@
   <div class="w3-display-left" style="padding-left: 200px;">
 
 <h3 class="w3-container w3-bar w3-black w3-large" style="padding:8px"><center>Post Vehicles<center></h3>
-
+<br>
+<br>
 <form class="w3-container" action="/car_dealer_portal/add_vehicle/" method="post">{% csrf_token %}
-  <lable>Car Name :</lable> <input class="w3-input" type="text" name="car_name"><br><br>
-  <lable>Color :</lable> <input class="w3-input" type="text" name="color"><br><br>
-  <lable>City :</lable> <input class="w3-input" type="text" name="city"><br><br>
-  <lable>Pincode :</lable> <input class="w3-input" type="text" name="pincode"><br><br>
-  <lable>Description :</lable> <input class="w3-input" type="text" name="description"><br><br>
-  <lable>Capacity (Seats) :</lable> <input class="w3-input" type="text" name="capacity"><br><br>
-  <input class="w3-btn w3-green" type="submit" value="Add Vehicle"><br><br>
+  <lable>Car Name :</lable> <input class="w3-input" type="text" name="car_name"><br>
+  <lable>Color :</lable> <input class="w3-input" type="text" name="color"><br>
+  <lable>City :</lable> <input class="w3-input" type="text" name="city"><br>
+  <lable>Pincode :</lable> <input class="w3-input" type="text" name="pincode"><br>
+  <lable>Description :</lable> <input class="w3-input" type="text" name="description"><br>
+  <lable>Capacity (Seats) :</lable> <input class="w3-input" type="text" name="capacity"><br>
+  <input class="w3-btn w3-green" type="submit" value="Add Vehicle"><br>
 <form>
 </div>
 
