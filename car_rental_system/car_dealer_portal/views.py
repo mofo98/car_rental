@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
@@ -38,7 +38,7 @@ def auth_view(request):
 
 def logout_view(request):
     auth.logout(request)
-    return render(request, 'car_dealer/login.html')
+    return redirect('/')
 
 def register(request):
     return render(request, 'car_dealer/register.html')
