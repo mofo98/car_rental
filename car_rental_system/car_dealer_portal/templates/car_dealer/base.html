@@ -20,6 +20,7 @@
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           {%if user.is_authenticated %}
+          <li class="nav-item"><a class="nav-link" href="/car_dealer_portal/auth/">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="/car_dealer_portal/order_list/">Orders</a></li>
           <li class="nav-item"><a class="nav-link" href="/car_dealer_portal/manage_vehicles/">Vehicles</a></li>
           <li class="nav-item"><a class="nav-link" href="/car_dealer_portal/history/">Earnings</a></li>
@@ -37,8 +38,7 @@
       </div>
     </div>
   </nav>
-<br>
-<br>
+
 <div class="content">
   {% block content %}
   {% endblock %}
