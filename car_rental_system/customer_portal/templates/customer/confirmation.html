@@ -1,12 +1,7 @@
 {% extends 'customer/base.html' %}
 {% block content %}
 
-<div class="w3-bar w3-large w3-black">
-  <div class="w3-bar-item w3-left w3-black">Customer Portal: {{user.username}}</div>
-  <a class="w3-bar-item w3-btn w3-teal w3-right" href="/customer_portal/logout/">Logout</a>
-  <a class="w3-bar-item w3-btn w3-teal w3-right" href="/customer_portal/manage/">Manage</a>
-  <a class="w3-ber-item w3-btn w3-teal w3-right" href="/customer_portal/search/">Search Cars</a>
-</div>
+
 <div class="w3-containet w3-center" style="padding:100px  ">
 <b>Car : {{vehicle.car_name}}</b>
 <form class="w3-container" action="/customer_portal/confirmed/" method="post">
