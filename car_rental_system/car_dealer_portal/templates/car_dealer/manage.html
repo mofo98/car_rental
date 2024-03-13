@@ -7,6 +7,7 @@
 
   <tr>
     <th style="padding:20;">Car </th>
+    <th style="padding:20;">Image </th>
     <th style="padding:20;">Color </th>
     <th style="padding:20;">Capacity </th>
     <th style="padding:20;">Pincode </th>
@@ -16,6 +17,7 @@
   {% for vehicle in vehicle_list %}
   <tr>
       <td>{{vehicle.car_name}}</td>
+      <td><img src="{{vehicle.car_image}}" alt="{{vehicle.car_name}}"></td>
       <td>{{vehicle.color}}</td>
       <td>{{vehicle.capacity}} Seats</td>
       <td>{{vehicle.area.pincode}}</td>
