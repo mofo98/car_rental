@@ -17,6 +17,7 @@ class CarDealer(models.Model):
 
 class Vehicles(models.Model):
     car_name = models.CharField(max_length = 20)
+    car_image = models.ImageField(default='static/car-1.png')
     color = models.CharField(max_length = 10)
     dealer = models.ForeignKey(CarDealer, on_delete = models.PROTECT)
     area = models.ForeignKey(Area, on_delete=models.SET_NULL, null = True)
