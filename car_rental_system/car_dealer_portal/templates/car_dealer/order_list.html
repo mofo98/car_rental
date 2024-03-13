@@ -20,7 +20,7 @@
   <tr>
     <td>{{order.vehicle.car_name}}</td>
     <td>{{order.vehicle.color}}</td>
-    <td>${{order.rent}}</td>
+    <td>ksh{{order.rent}}</td>
     <td>{{order.days}}</td>
     <td><form action = "/car_dealer_portal/complete/" method="post">
       {% csrf_token %}
