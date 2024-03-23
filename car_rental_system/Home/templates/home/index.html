@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
@@ -57,8 +58,8 @@
           <div class="col-lg-8 ftco-animate">
           	<div class="text w-100 text-center mb-md-5 pb-md-5">
 	            <h1 class="mb-4">Welcome to Car rental management system</h1>
-	            <p style="font-size: 18px;">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts</p>
-	            <a href="https://vimeo.com/45830194" class="icon-wrap popup-vimeo d-flex align-items-center mt-4 justify-content-center">
+	            <p style="font-size: 25px;">unlock the freedom to explore with ease. Your journey begins with us</p>
+	            <a href="/customer_portal/login/" class="icon-wrap d-flex align-items-center mt-4 justify-content-center">
 	            	<div class="icon d-flex align-items-center justify-content-center">
 	            		<span class="ion-ios-play"></span>
 	            	</div>
@@ -81,9 +82,10 @@
 	  						<div class="services-wrap rounded-right w-100">
 	  							<h3 class="heading-section mb-4">Better Way to Rent Your Perfect Cars</h3>
 	  							<div class="row d-flex mb-4">
-					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-					            <div class="services w-100 text-center">
-				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+									  <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+										  <div class="services w-100 text-center">
+									<i class="" aria-hidden="true"></i>
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-map-marker"></span></div>
 				              	<div class="text w-100">
 					                <h3 class="heading mb-2">Choose Your Pickup Location</h3>
 				                </div>
@@ -91,7 +93,7 @@
 					          </div>
 					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
 					            <div class="services w-100 text-center">
-				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-check-square-o"></span></div>
 				              	<div class="text w-100">
 					                <h3 class="heading mb-2">Select the Best Deal</h3>
 					              </div>
@@ -99,7 +101,7 @@
 					          </div>
 					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
 					            <div class="services w-100 text-center">
-				              	<div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+				              	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-bookmark" aria-hidden="true"></span></div>
 				              	<div class="text w-100">
 					                <h3 class="heading mb-2">Reserve Your Rental Car</h3>
 					              </div>
@@ -120,7 +122,7 @@
     		<div class="row justify-content-center">
           <div class="col-md-12 heading-section text-center ftco-animate mb-5">
           	<span class="subheading">What we offer</span>
-            <h2 class="mb-2">Feeatured Vehicles</h2>
+            <h2 class="mb-2">Featured Vehicles</h2>
           </div>
         </div>
     		<div class="row">
@@ -128,29 +130,15 @@
     				<div class="carousel-car owl-carousel">
     					<div class="item">
     						<div class="car-wrap rounded ftco-animate">
-		    					<div class="img rounded d-flex align-items-end" style="background-image: url(static/images/car-1.jpg);">
-		    					</div>
-		    					<div class="text">
-		    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
-		    						<div class="d-flex mb-3">
-			    						<span class="cat">Cheverolet</span>
-			    						<p class="price ml-auto">$500 <span>/day</span></p>
-		    						</div>
-		    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
-		    					</div>
-		    				</div>
-    					</div>
-    					<div class="item">
-    						<div class="car-wrap rounded ftco-animate">
 		    					<div class="img rounded d-flex align-items-end" style="background-image: url(static/images/DODGE.jpg);">
 		    					</div>
 		    					<div class="text">
-		    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
+		    						<h2 class="mb-0"><a href="#">Maybach</a></h2>
 		    						<div class="d-flex mb-3">
-			    						<span class="cat">Cheverolet</span>
-			    						<p class="price ml-auto">$500 <span>/day</span></p>
+			    						<span class="cat">Rental</span>
+			    						<p class="price ml-auto">ksh500 <span>/day</span></p>
 		    						</div>
-		    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+		    						<p class="d-flex mb-0 d-block"><a href="/customer_portal/login/" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
 		    					</div>
 		    				</div>
     					</div>
@@ -159,12 +147,12 @@
 		    					<div class="img rounded d-flex align-items-end" style="background-image: url(static/images/car-3.jpg);">
 		    					</div>
 		    					<div class="text">
-		    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
+		    						<h2 class="mb-0"><a href="#">BMW</a></h2>
 		    						<div class="d-flex mb-3">
-			    						<span class="cat">Cheverolet</span>
-			    						<p class="price ml-auto">$500 <span>/day</span></p>
+			    						<span class="cat">Rental</span>
+			    						<p class="price ml-auto">ksh500 <span>/day</span></p>
 		    						</div>
-		    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+		    						<p class="d-flex mb-0 d-block"><a href="/customer_portal/login/" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
 		    					</div>
 		    				</div>
     					</div>
@@ -173,12 +161,12 @@
 		    					<div class="img rounded d-flex align-items-end" style="background-image: url(static/images/car-4.jpg);">
 		    					</div>
 		    					<div class="text">
-		    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
+		    						<h2 class="mb-0"><a href="#">volvo</a></h2>
 		    						<div class="d-flex mb-3">
-			    						<span class="cat">Cheverolet</span>
-			    						<p class="price ml-auto">$500 <span>/day</span></p>
+			    						<span class="cat">Rental</span>
+			    						<p class="price ml-auto">ksh500 <span>/day</span></p>
 		    						</div>
-		    						<p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
+		    						<p class="d-flex mb-0 d-block"><a href="/customer_portal/login/" class="btn btn-primary py-2 mr-1">Book now</a> <a href="#" class="btn btn-secondary py-2 ml-1">Details</a></p>
 		    					</div>
 		    				</div>
     					</div>
@@ -198,8 +186,7 @@
 	          	<span class="subheading">About us</span>
 	            <h2 class="mb-4">Welcome to CarRental</h2>
 
-	            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor debitis ducimus quos molestias sed, aperiam eligendi ut vel voluptas illo veritatis neque, ex tempore.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, enim ipsa dignissimos nisi eum eaque, sit voluptatem illo, sequi laudantium quam. Deserunt soluta magnam ea iure provident exercitationem quia neque magni perspiciatis velit, ad veniam quis culpa temporibus obcaecati odio debitis sunt sit fuga ipsam, earum sapiente ipsa laudantium enim!</p>
+	            <p>"Experience the freedom of the open road with our premium fleet of vehicles. Wherever you're headed, we've got the perfect ride waiting for you. Start your adventure today!</p>
 	            <p><a href="#" class="btn btn-primary py-3 px-4">Search Vehicle</a></p>
 	          </div>
 					</div>
@@ -214,11 +201,11 @@
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2"><a href="#" class="logo">Car<span>Rental</span></a></h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p>Far far away, behind the word mountains, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -252,7 +239,7 @@
           <div class="col-md-12 text-center">
 
             <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="" target="_blank">Bnejamin barasa</a></p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | made    <i class="fa fa-car" aria-hidden="true"></i> by <a href="" target="_blank">Benjamin Barasa</a></p>
           </div>
         </div>
       </div>
