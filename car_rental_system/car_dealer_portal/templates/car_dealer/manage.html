@@ -14,15 +14,15 @@
     <th style="padding:20;">Address</th>
     <th style="padding:20;">Action</th>
   </tr>
-  {% for vehicle in vehicle_list %}
+  {% for vehicle in vehicles %}
   <tr>
       <td>{{vehicle.car_name}}</td>
-      <td><img src="{{vehicle.car_image}}" alt="{{vehicle.car_name}}"></td>
+      <td><img src="{{vehicle.imageURL}}" alt="{{vehicle.car_name}}" style="height: 100px; width: 100px;"></td>
       <td>{{vehicle.color}}</td>
       <td>{{vehicle.capacity}} Seats</td>
       <td>{{vehicle.area.pincode}}</td>
       <td>{{vehicle.area.city}}</td>
-      <td><form action = "/car_dealer_portal/delete/" method="post">
+      <td style="width: 50px;"><form action = "/car_dealer_portal/delete/" method="post">
         {% csrf_token %}
         <input type="hidden" name="id" value="{{vehicle.id}}">
         <input class="w3-btn w3-red" type="submit" value="Delete">
