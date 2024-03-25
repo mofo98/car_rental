@@ -17,10 +17,18 @@ class CarDealer(models.Model):
 
 class Vehicles(models.Model):
     car_name = models.CharField(max_length = 20)
-    car_image = models.ImageField(default='static/car-1.png')
+    car_image = models.ImageField(default='static/car-1.png',upload_to='vehicle_images',blank=True,null=True)
     color = models.CharField(max_length = 10)
     dealer = models.ForeignKey(CarDealer, on_delete = models.PROTECT)
     area = models.ForeignKey(Area, on_delete=models.SET_NULL, null = True)
     capacity = models.CharField(max_length = 2)
     is_available = models.BooleanField(default = True)
     description = models.CharField(max_length = 100)
+
+    @property
+    def imageURL(self):
+        try:
+            url = self.car_image.url
+        except:
+            url=''
+        return url
