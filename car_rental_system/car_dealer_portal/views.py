@@ -105,11 +105,8 @@ def manage_vehicles(request):
     username = request.user
     user = User.objects.get(username = username)
     car_dealer = CarDealer.objects.get(car_dealer = user)
-    vehicle_list = []
     vehicles = Vehicles.objects.filter(dealer = car_dealer)
-    for v in vehicles:
-        vehicle_list.append(v)
-    return render(request, 'car_dealer/manage.html', {'vehicle_list':vehicle_list})
+    return render(request, 'car_dealer/manage.html', {'vehicles':vehicles})
 
 @login_required
 def order_list(request):
