@@ -7,7 +7,7 @@
 <form class="w3-container" action="/customer_portal/confirmed/" method="post">
   {% csrf_token %}
   <b>Price : ${{cost_per_day}} per day</b><br><br>
-  <lable>How many days?</lable> <input type="text" placeholder="2" name="days"><br><br>
+  <lable>How many days?</lable> <input type="number" placeholder="2" name="days"><br><br>
   <input class="w3-btn w3-teal" type="submit"  value="Confirm My Order"><br><br>
   <input type="hidden" value="{{vehicle.id}}" name="id">
   <br><br>
