@@ -22,6 +22,7 @@
     {% for vehicle in request.session.vehicles_list %}
     <tr>
       <td>{{vehicle.name}}</td>
+      <td><img src="{{vehicle.imageURL}}" alt="{{vehicle.name}}" style="height: 75px;width: 125px;"></td>
       <td>{{vehicle.color}}</td>
       <td>{{vehicle.capacity}}</td>
       <td>{{vehicle.description}}</td>
@@ -29,7 +30,7 @@
       <td><form action = "/customer_portal/rent/" method="post">
         {% csrf_token %}
         <input type="hidden" name="id" value="{{vehicle.id}}">
-        <input class="w3-btn w3-green" type="submit" value="Rent">
+        <input class="w3-btn w3-green" type="submit" value="rent" width="50px">
         </form></td>
     </tr>
 
